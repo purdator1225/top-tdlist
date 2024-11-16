@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <h1>To Do List</h1>
+
+        <form>
+            <input type="text" name="title" placeholder="Add A Task" required>
+
+            
+            <textarea name="description" id="description" placeholder="Add description"></textarea>
+
+            <div>Due Date</div>
+            <input name="date" type="date" id="due-date-1" required>
+
+            <div>
+                <label for="priority-select">Select Priority</label>
+                <select name="priority" id="priority-select">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+                 <!-- Project Selection -->
+            <div>
+                <label for="project-select">Select A Project</label>
+                <select name="project" id="project-select">
+                    <option value="defaultProject">Default Project</option>
+                             <option value="Sports">Sports</option>
+                               <option value="Work">Work</option>
+                    <!-- Additional options can be added dynamically via JavaScript -->
+                </select>
+            </div>
+
+            <button type="submit" class="add-task-btn">Add Task</button>
+
+
+
+        </form>
+
+        <div class="project-holder"></div>
+        
+
+        
+    
+    
+    
+    </div>
+</body>
+</html>
